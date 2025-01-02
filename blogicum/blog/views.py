@@ -183,10 +183,8 @@ class PostDetailView(DetailView):
         else:
             if (
                 post.is_published
-                and
-                post.category.is_published
-                and
-                post.pub_date < timezone.now()
+                and post.category.is_published
+                and post.pub_date < timezone.now()
             ):
                 context['post'] = post
             else:
@@ -199,7 +197,6 @@ class PostDetailView(DetailView):
 
 def category_posts(request, category_slug):
     """Отображение публикаций категории"""
-
     category = get_object_or_404(
         Category,
         slug=category_slug,
