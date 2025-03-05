@@ -7,10 +7,22 @@ MPA приложение, написанное на django, sqlite.
 python -m venv venv
 ```
 
-Активация виртуального окружения: ```source venv/Scripts/activate```
+Активация виртуального окружения: 
+```
+source venv/Scripts/activate
+```
 
-Установка зависимостей: ```pip install -r requirements.txt```
+Установка зависимостей: 
+```
+pip install -r requirements.txt
+```
 
-Выполнение миграций: ```python manage.py migrate```
+Выполнение миграций: 
+```
+python manage.py migrate
+```
 
-Запуск программы: ```python run manage.py```
+Запуск программы: 
+```
+python run manage.py
+```
